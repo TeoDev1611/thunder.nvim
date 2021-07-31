@@ -17,7 +17,7 @@ print(INSPECT.inspect(setup))
 local function GenerateToml()
     if setup ~= nil then
         local tomlStr = TOML.encode(setup)
-        local file = io.open("./puppy.toml", "w")
+        local file = io.open("./thunder.toml", "w")
         file:write(tomlStr)
         file:close()
     else
