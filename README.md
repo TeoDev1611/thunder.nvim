@@ -117,6 +117,8 @@ Distributed under the MIT License. See [LICENSE](https://github.com/TeoDev1611/t
 * [jonstoler](https://github.com/jonstoler/lua-toml)
 * [kikito](https://github.com/kikit/inspect.lua)
 * [tjdevries](https://github.com/tjdevries/vlog.nvim)
+* [peposso](https://github.com/peposso/lua-tinyyaml)
+* [rxi](https://github.com/rxi/json.lua)
 
 ---
 Made with :heart: in Ecuador
