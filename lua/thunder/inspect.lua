@@ -4,7 +4,7 @@
 ]]
 --
 
-local inspect = {
+local M = {
   _VERSION = 'inspect.lua 3.1.0',
   _URL = 'http://github.com/kikito/inspect.lua',
   _DESCRIPTION = 'human-readable representations of tables',
@@ -32,12 +32,12 @@ local inspect = {
 
 local tostring = tostring
 
-inspect.KEY = setmetatable({}, {
+M.KEY = setmetatable({}, {
   __tostring = function()
     return 'inspect.KEY'
   end,
 })
-inspect.METATABLE = setmetatable({}, {
+M.METATABLE = setmetatable({}, {
   __tostring = function()
     return 'inspect.METATABLE'
   end,
@@ -195,13 +195,13 @@ local function processRecursive(process, item, path, visited)
     local processedKey
 
     for k, v in rawpairs(processed) do
-      processedKey = processRecursive(process, k, makePath(path, k, inspect.KEY), visited)
+      processedKey = processRecursive(process, k, makePath(path, k, M.KEY), visited)
       if processedKey ~= nil then
         processedCopy[processedKey] = processRecursive(process, v, makePath(path, processedKey), visited)
       end
     end
 
-    local mt = processRecursive(process, getmetatable(processed), makePath(path, inspect.METATABLE), visited)
+    local mt = processRecursive(process, getmetatable(processed), makePath(path, M.METATABLE), visited)
     if type(mt) ~= 'table' then
       mt = nil
     end -- ignore not nil/table __metatable field
@@ -261,7 +261,7 @@ function Inspector:putKey(k)
 end
 
 function Inspector:putTable(t)
-  if t == inspect.KEY or t == inspect.METATABLE then
+  if t == M.KEY or t == M.METATABLE then
     self:puts(tostring(t))
   elseif self:alreadyVisited(t) then
     self:puts('<table ', self:getId(t), '>')
@@ -335,7 +335,7 @@ end
 
 -------------------------------------------------------------------
 
-function inspect.inspect(root, options)
+function M.inspect(root, options)
   options = options or {}
 
   local depth = options.depth or math.huge
@@ -363,10 +363,10 @@ function inspect.inspect(root, options)
   return table.concat(inspector.buffer)
 end
 
-setmetatable(inspect, {
+setmetatable(M, {
   __call = function(_, ...)
-    return inspect.inspect(...)
+    return M.inspect(...)
   end,
 })
 
-return inspect
+return M
