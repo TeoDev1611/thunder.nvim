@@ -1,6 +1,6 @@
 <br/>
 <p align="center">
-  <h3 align="center">thunder.nvim</h3>
+  <h1 align="center">thunder.nvim</h1>
 
   <p align="center">
     Use many formats of files in Neovim! ✨ :shipit:
@@ -10,9 +10,9 @@
     .
     <a href="https://github.com/TeoDev1611/thunder.nvim/issues">Request Feature</a>
   </p>
+  ![Contributors](https://img.shields.io/github/contributors/TeoDev1611/thunder.nvim?color=dark-green) ![Forks](https://img.shields.io/github/forks/TeoDev1611/thunder.nvim?style=social) ![Stargazers](https://img.shields.io/github/stars/TeoDev1611/thunder.nvim?style=social) ![Issues](https://img.shields.io/github/issues/TeoDev1611/thunder.nvim) ![License](https://img.shields.io/github/license/TeoDev1611/thunder.nvim) 
 </p>
 
-![Contributors](https://img.shields.io/github/contributors/TeoDev1611/thunder.nvim?color=dark-green) ![Forks](https://img.shields.io/github/forks/TeoDev1611/thunder.nvim?style=social) ![Stargazers](https://img.shields.io/github/stars/TeoDev1611/thunder.nvim?style=social) ![Issues](https://img.shields.io/github/issues/TeoDev1611/thunder.nvim) ![License](https://img.shields.io/github/license/TeoDev1611/thunder.nvim) 
 
 ## Table Of Contents
 
