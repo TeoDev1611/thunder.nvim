@@ -13,7 +13,7 @@
 </p>
 
 <div align = "center">
-  ![Contributors](httdivs://img.shields.io/github/contributors/TeoDev1611/thunder.nvim?color=dark-green) 
+  ![Contributors](https://img.shields.io/github/contributors/TeoDev1611/thunder.nvim?color=dark-green) 
   ![Forks](https://img.shields.io/github/forks/TeoDev1611/thunder.nvim?style=social) 
   ![Stargazers](https://img.shields.io/github/stars/TeoDev1611/thunder.nvim?style=social) 
   ![Issues](https://img.shields.io/github/issues/TeoDev1611/thunder.nvim) 
